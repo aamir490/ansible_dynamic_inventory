@@ -2,6 +2,18 @@
 
 '''
 Example custom dynamic inventory script for Ansible, in Python.
+
+Description :-
+This is an example custom dynamic inventory script for Ansible written in Python.
+Dynamic inventory allows Ansible to pull inventory information from an external source,
+ such as a script, instead of using a static file.
+
+
+The provided script is an example of a custom dynamic inventory script for Ansible.
+In Ansible, an inventory is a list of hosts that Ansible uses to target tasks.
+A static inventory is a static file that contains a predefined list of hosts, but in some cases, you may want a dynamic inventory that can be generated or fetched dynamically based on external information.
+
+This script serves as a dynamic inventory script, meaning it generates an inventory dynamically rather than using a static file. Specifically, it can be used to provide Ansible with information about hosts, groups, and variables based on the logic defined in the script.
 '''
 
 import os
@@ -69,3 +81,10 @@ class ExampleInventory(object):
 
 # Get the inventory.
 ExampleInventory()
+
+
+
+
+
+
+
